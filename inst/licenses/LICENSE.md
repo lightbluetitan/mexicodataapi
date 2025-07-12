@@ -24,12 +24,10 @@ This API is publicly accessible, requires **no authentication**, and returns res
 In the `MexicoDataAPI` package, the API is used to **dynamically retrieve and display real-time indicators for Mexico**. 
 Data is accessed live via HTTP requests to the API and shown directly in the R console. **No data is stored or redistributed** by this package.
 
-- **Official site**: [https://api.worldbank.org/v2/](https://api.worldbank.org/v2/)
 - **API documentation**: [https://datahelpdesk.worldbank.org/knowledgebase/articles/889392](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392)
 - **License**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 - **Attribution**:
 
-  > Data retrieved via the [World Bank Open Data API](https://api.worldbank.org/v2/).  
   > Source: The World Bank – Open Data licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 

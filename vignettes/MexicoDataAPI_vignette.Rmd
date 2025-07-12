@@ -31,7 +31,7 @@ In addition to API-access functions, the package includes a set of curated datas
 
 ## Functions for MexicoDataAPI
 
-The `MexicoDataAPI` package provides several core functions to access real-time and structured information about Mexico from public APIs such as the [World Bank API](https://api.worldbank.org/v2/) and [REST Countries](https://restcountries.com/). 
+The `MexicoDataAPI` package provides several core functions to access real-time and structured information about Mexico from public APIs such as the [World Bank API](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392) and [REST Countries](https://restcountries.com/). 
 Below is a list of the main functions included in the package:
 
 

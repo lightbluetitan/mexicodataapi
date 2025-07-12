@@ -9,7 +9,7 @@ Description: Provides functions to access data from the 'World Bank API' and the
     including air quality monitoring stations, pollution zones, income surveys, postal abbreviations,
     election studies, forest productivity, and demographic data by state. The package supports research
     and analysis focused on Mexico by integrating reliable global APIs with structured national datasets
-    drawn from open and academic sources. For more details on the 'World Bank API', see <https://api.worldbank.org/v2/>,
+    drawn from open and academic sources. For more details on the 'World Bank API', see <https://datahelpdesk.worldbank.org/knowledgebase/articles/889392>,
     and for the 'REST Countries API', see <https://restcountries.com/>.
 License: GPL-3
 URL: https://github.com/lightbluetitan/mexicodataapi, https://lightbluetitan.github.io/mexicodataapi/
