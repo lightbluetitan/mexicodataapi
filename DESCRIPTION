@@ -1,0 +1,41 @@
+Package: MexicoDataAPI
+Type: Package
+Title: Access Mexican Data via APIs and Curated Datasets
+Version: 0.1.0
+Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
+Description: Provides functions to access data from the 'World Bank API' and the 'REST Countries API',
+    related to Mexico's economic indicators, population statistics, literacy rates, and international
+    geopolitical information. Additionally, the package includes curated datasets related to Mexico,
+    including air quality monitoring stations, pollution zones, income surveys, postal abbreviations,
+    election studies, forest productivity, and demographic data by state. The package supports research
+    and analysis focused on Mexico by integrating reliable global APIs with structured national datasets
+    drawn from open and academic sources. For more details on the 'World Bank API', see <https://api.worldbank.org/v2/>,
+    and for the 'REST Countries API', see <https://restcountries.com/>.
+License: GPL-3
+URL: https://github.com/lightbluetitan/mexicodataapi, https://lightbluetitan.github.io/mexicodataapi/
+BugReports: https://github.com/lightbluetitan/mexicodataapi/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports:
+    utils,
+    httr,
+    jsonlite,
+    dplyr,
+    scales
+Suggests:
+    ggplot2,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Authors@R: 
+    person(
+        given = "Renzo",
+        family = "Caceres Rossi",
+        role = c("aut", "cre"),
+        email = "arenzocaceresrossi@gmail.com",
+        comment = c(ORCID = "0009-0005-0744-854X")
+    )
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+VignetteBuilder: knitr
