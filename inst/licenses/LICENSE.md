@@ -35,6 +35,14 @@ Data is accessed live via HTTP requests to the API and shown directly in the R c
    An open-source project that offers information about countries worldwide, including demographics, geography, and regional groupings.  
    This API is also publicly accessible and does not require authentication.  
    Website: [https://restcountries.com/](https://restcountries.com/)
+   
+   
+3.- **API: Nager.Date**
+- Website: [https://date.nager.at/Api](https://date.nager.at/Api)
+- License: MIT License
+- Notes: The API and its source code are licensed under the MIT License. No authentication is required for the public API.
+Offline or commercial usage (e.g., via Docker or NuGet packages) may be subject to separate licensing, but this does not affect the MIT licensing of the open source API.
+
 
 As per the maintainers of both APIs, **no attribution is required** for using or distributing the data.  
 However, we recommend reviewing the official documentation and usage terms on their respective websites to ensure proper understanding and responsible use.

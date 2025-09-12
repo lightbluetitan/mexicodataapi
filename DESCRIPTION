@@ -1,28 +1,33 @@
 Package: MexicoDataAPI
 Type: Package
 Title: Access Mexican Data via APIs and Curated Datasets
-Version: 0.1.0
+Version: 0.2.0
 Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
-Description: Provides functions to access data from the 'World Bank API' and the 'REST Countries API',
-    related to Mexico's economic indicators, population statistics, literacy rates, and international
-    geopolitical information. Additionally, the package includes curated datasets related to Mexico,
-    including air quality monitoring stations, pollution zones, income surveys, postal abbreviations,
-    election studies, forest productivity, and demographic data by state. The package supports research
-    and analysis focused on Mexico by integrating reliable global APIs with structured national datasets
-    drawn from open and academic sources. For more details on the 'World Bank API', see <https://datahelpdesk.worldbank.org/knowledgebase/articles/889392>,
-    and for the 'REST Countries API', see <https://restcountries.com/>.
+Description: Provides functions to access data from public RESTful APIs including
+    'REST Countries API', 'World Bank API', and 'Nager.Date API', covering Mexico's economic
+    indicators, population statistics, literacy rates, international geopolitical
+    information and official public holidays. The package also includes curated
+    datasets related to Mexico such as air quality monitoring stations, pollution
+    zones, income surveys, postal abbreviations, election studies, forest
+    productivity and demographic data by state. It supports research and analysis
+    focused on Mexico by integrating reliable global APIs with structured national
+    datasets drawn from open and academic sources. 
+    For more information on the APIs, see: 
+        'REST Countries API' <https://restcountries.com/>, 
+        'World Bank API' <https://datahelpdesk.worldbank.org/knowledgebase/articles/889392>, 
+        and 'Nager.Date API' <https://date.nager.at/Api>.
 License: GPL-3
 URL: https://github.com/lightbluetitan/mexicodataapi, https://lightbluetitan.github.io/mexicodataapi/
 BugReports: https://github.com/lightbluetitan/mexicodataapi/issues
 Encoding: UTF-8
-LazyData: true
 Depends: R (>= 4.1.0)
 Imports:
     utils,
     httr,
     jsonlite,
     dplyr,
-    scales
+    scales,
+    tibble
 Suggests:
     ggplot2,
     testthat (>= 3.0.0),

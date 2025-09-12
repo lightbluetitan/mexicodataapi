@@ -7,7 +7,7 @@
 \title{MexicoDataAPI: Access Mexican Data via APIs and Curated Datasets}
 \description{
 {
-This package provides functions to access data from the 'World Bank API' and the 'REST Countries API', related to Mexico's economic indicators, population statistics, literacy rates, and international geopolitical information. Additionally, the package includes curated datasets related to Mexico, including air quality monitoring stations, pollution zones, income surveys, postal abbreviations, election studies, forest productivity, and demographic data by state.
+This package provides functions to access data from the 'World Bank API','REST Countries API' and 'Nager.Date API', covering Mexico's economic indicators, population statistics, literacy rates, international geopolitical information and official public holidays. The package also includes curated datasets related to Mexico such as air quality monitoring stations, pollution zones, income surveys, postal abbreviations, election studies and more.
 }
 }
 \details{

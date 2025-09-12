@@ -25,7 +25,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">MexicoDataAPI</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +41,7 @@
 <li><a class="dropdown-item" href="../articles/MexicoDataAPI_vignette.html">MexicoDataAPI: Access Mexican Data via APIs and Curated Datasets</a></li>
   </ul>
 </li>
+<li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
@@ -84,33 +85,39 @@
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <p>The <code>MexicoDataAPI</code> package provides a unified interface
-to access open data from the World Bank API and the REST Countries API,
-with a focus on <em>Mexico</em>. It allows users to retrieve up-to-date
-information on topics such as economic indicators, population figures,
-literacy rates, and unemployment levels, as well as basic geopolitical
-information.</p>
+to access open data from the <strong>World Bank API</strong>,
+<strong>REST Countries API</strong>, and <strong>Nager.Date
+API</strong>, with a focus on Mexico. It allows users to retrieve
+up-to-date information on topics such as economic indicators, population
+figures, literacy rates, unemployment levels, basic geopolitical
+information, and official public holidays.</p>
 <p>In addition to API-access functions, the package includes a set of
-curated datasets related to <em>Mexico</em>. These cover areas such as
-air quality monitoring, state-level income surveys, postal
+curated datasets related to <strong>Mexico</strong>. These cover areas
+such as air quality monitoring, state-level income surveys, postal
 abbreviations, election results, and regional forest classification.</p>
 <p><code>MexicoDataAPI</code> is intended to support users working with
-data related to <em>Mexico</em> by integrating international API sources
-with selected datasets from national and academic origins, in a single R
+data related to Mexico by integrating international API sources with
+selected datasets from national and academic origins, in a single R
 package.</p>
 <div class="section level3">
 <h3 id="functions-for-mexicodataapi">Functions for MexicoDataAPI<a class="anchor" aria-label="anchor" href="#functions-for-mexicodataapi"></a>
 </h3>
 <p>The <code>MexicoDataAPI</code> package provides several core
 functions to access real-time and structured information about Mexico
-from public APIs such as the <a href="https://api.worldbank.org/v2/" class="external-link">World Bank API</a> and <a href="https://restcountries.com/" class="external-link">REST Countries</a>. Below is a list of
-the main functions included in the package:</p>
+from public APIs such as the <a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392" class="external-link">World
+Bank API</a>, <a href="https://restcountries.com/" class="external-link">REST Countries</a>,
+and <a href="https://date.nager.at/Api" class="external-link">Nager.Date API</a>.</p>
+<p>Below is a list of the main functions included in the package:</p>
 <ul>
-<li><p><code><a href="../reference/get_country_info.html">get_country_info()</a></code>: Get Key Country Information from
-the REST Countries API</p></li>
+<li><p><code><a href="../reference/get_country_info_mx.html">get_country_info_mx()</a></code>: Get Key Country Information
+about Mexico from the REST Countries API</p></li>
 <li><p><code><a href="../reference/get_mexico_cpi.html">get_mexico_cpi()</a></code>: Get Mexico’s Consumer Price Index
 (2010 = 100) from World Bank</p></li>
 <li><p><code><a href="../reference/get_mexico_gdp.html">get_mexico_gdp()</a></code>: Get Mexico’s GDP (Current US$)
 from World Bank</p></li>
+<li><p><code><a href="../reference/get_mexico_holidays.html">get_mexico_holidays()</a></code>: Get official public holidays
+in Mexico for a given year, e.g.,
+<code>get_mexico_holidays(2025)</code>.</p></li>
 <li><p><code><a href="../reference/get_mexico_life_expectancy.html">get_mexico_life_expectancy()</a></code>: Get Mexico’s Life
 Expectancy from World Bank</p></li>
 <li><p><code><a href="../reference/get_mexico_literacy_rate.html">get_mexico_literacy_rate()</a></code>: Get Mexico’s Literacy
@@ -240,17 +247,18 @@ entities of Mexico.</p></li>
 <h3 id="conclusion">Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"></a>
 </h3>
 <p>The <code>MexicoDataAPI</code> package provides a comprehensive
-interface to access open data about <em>Mexico</em> through RESTful APIs
-and curated datasets. It includes functions to retrieve real-time
-information from the <em>World Bank API</em> and <em>REST Countries
-API</em>, <em>covering topics such as population, GDP, CPI, life
-expectancy, literacy, unemployment, and general country-level
-indicators</em>. In addition, the package offers curated datasets
-related to air quality monitoring stations, pollution zones, state-level
-income surveys for 2008 and 2016, postal abbreviations, election
-studies, and ecological data from the Chiapas dry forests. Together,
-these resources support research, teaching, and analysis focused on
-<em>Mexico</em>’s economic, environmental, and sociopolitical
+interface to access open data about <strong>Mexico</strong> through
+RESTful APIs and curated datasets. It includes functions to retrieve
+real-time information from the <strong>World Bank API</strong>,
+<strong>REST Countries API</strong>, and <strong>Nager.Date
+API</strong>, covering topics such as population, GDP, CPI, life
+expectancy, literacy, unemployment, general country-level indicators,
+and official public holidays. In addition, the package offers curated
+datasets related to air quality monitoring stations, pollution zones,
+state-level income surveys for 2008 and 2016, postal abbreviations,
+election studies, and ecological data from the Chiapas dry forests.
+Together, these resources support research, teaching, and analysis
+focused on Mexico’s economic, environmental, and sociopolitical
 landscape.</p>
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
 

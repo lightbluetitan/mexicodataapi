@@ -1,10 +1,8 @@
 # MexicoDataAPI
 
-The `MexicoDataAPI` package provides a unified interface to access open data from the World Bank API and the REST Countries API, with a focus on *Mexico*. It allows users to retrieve up-to-date information on topics such as economic indicators, population figures, literacy rates, and unemployment levels, as well as basic geopolitical information.
+The `MexicoDataAPI` package provides a unified interface to access open data from the **World Bank API**, **REST Countries API**, and **Nager.Date API**, with a focus on Mexico. It allows users to retrieve up-to-date information on topics such as economic indicators, population figures, literacy rates, unemployment levels, basic geopolitical information, and official public holidays.
 
-In addition to API-access functions, the package includes a set of curated datasets related to *Mexico*. These cover areas such as air quality monitoring, state-level income surveys, postal abbreviations, election results, and regional forest classification.
-
-`MexicoDataAPI` is intended to support users working with data related to *Mexico* by integrating international API sources with selected datasets from national and academic origins, in a single R package.
+In addition to API-access functions, the package includes a set of curated datasets related to **Mexico**. These cover areas such as air quality monitoring, state-level income surveys, postal abbreviations, election results, and regional forest classification.
 
 ## Installation
 
@@ -29,22 +27,24 @@ library(MexicoDataAPI)
 
 ### MexicoDataAPI Functions
 
-- `get_mexico_cpi()`: Get Mexico's Consumer Price Index (2010 = 100) from World Bank
+- `get_country_info_mx()`: Get Key Country Information about Mexico from the REST Countries API
+
+- `get_mexico_cpi()`: Get Mexico's Consumer Price Index (2010 = 100) from World Bank  
 
 - `get_mexico_gdp()`: Get Mexico's GDP (Current US$) from World Bank 
 
-- `get_mexico_life_expectancy`: Get Mexico's Life Expectancy from World Bank
+- `get_mexico_holidays()`: Get official public holidays in Mexico for a given year, e.g., `get_mexico_holidays(2025)`. 
 
-- `get_mexico_literacy_rate()`: Get Mexico's Literacy Rate (Age 15+) from World Bank
+- `get_mexico_life_expectancy()`: Get Mexico's Life Expectancy from World Bank 
 
-- `get_mexico_population()`: Get Mexico's Population (Total) from World Bank
+- `get_mexico_literacy_rate()`: Get Mexico's Literacy Rate (Age 15+) from World Bank 
 
-- `get_mexico_unemployment()`: Get Mexico's Unemployment Rate from World Bank
+- `get_mexico_population()`: Get Mexico's Population (Total) from World Bank 
 
-- `get_country_info()`: Get essential information about Mexico or any other country by its full name
-Example: *get_country_info("Mexico")*,*get_country_info("mexico")*,*get_country_info("Peru")*
+- `get_mexico_unemployment()`: Get Mexico's Unemployment Rate (%) from World Bank 
 
 - `view_datasets_MexicoDataAPI()`: Lists all curated datasets included in the `MexicoDataAPI` package
+
 
 ## Dataset Suffixes
 
@@ -76,7 +76,7 @@ In addition to API access functions, `MexicoDataAPI` provides several preloaded 
 library(MexicoDataAPI)
 
 # Selected, essential information about Mexico
-get_country_info("Mexico")
+get_country_info_mx()
 
 # Get Mexico's Population (Total) from World Bank
 get_mexico_population()

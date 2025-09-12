@@ -1,5 +1,5 @@
 # MexicoDataAPI - Access Mexican Data via APIs and Curated Datasets
-# Version 0.1.0
+# Version 0.2.0
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -21,8 +21,8 @@
 utils::globalVariables(c(
 
 
-  # Variables of the get_country_info function
-  "name.common", "name.official", "capital", "region", "subregion", "population", "area", "languages",
+  # Variables of the get_country_info_mx function
+  "name_common", "name_official", "region", "subregion", "capital", "area", "population", "languages",
 
   # Variables of the get_mexico_cpi function
 
@@ -42,8 +42,10 @@ utils::globalVariables(c(
   "indicator","country","year","value","value_label",
 
   # Variables of the get_mexico_unemployment function
-  "indicator","country","year","value"
+  "indicator","country","year","value",
 
+  # Variables of the get_mexico_holidays function
+  "date","local_name","name"
 
 
 
