@@ -1,6 +1,6 @@
 # MexicoDataAPI - Access Mexican Data via APIs and Curated Datasets
-# Version 0.2.0
-# Copyright (C) 2025 Renzo Caceres Rossi
+# Version 0.3.0
+# Copyright (C) 2025-2026 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,17 +22,13 @@ library(testthat)
 # Test 1: Valid output structure
 test_that("get_mexico_literacy_rate() returns valid structure and types", {
   skip_on_cran()
-
   result <- get_mexico_literacy_rate()
-
   expect_false(is.null(result))
   expect_s3_class(result, "tbl_df")
   expect_gt(nrow(result), 0)
-
   expected_columns <- c("indicator", "country", "year", "value")
   expect_true(all(expected_columns %in% names(result)))
   expect_equal(ncol(result), 4)
-
   expect_type(result$indicator, "character")
   expect_type(result$country, "character")
   expect_type(result$year, "integer")
@@ -46,17 +42,21 @@ test_that("get_mexico_literacy_rate() contains correct indicator label", {
   expect_true(any(grepl("Literacy rate", result$indicator)))
 })
 
-# Test 3: Check for presence of NA values (allowed and expected)
-test_that("get_mexico_literacy_rate() allows NA values for missing years", {
+# Test 3: value column is numeric and NA-compatible (missing years are
+# possible but not guaranteed, since World Bank/UNESCO periodically
+# backfills historical gaps; asserting that a NA must currently exist
+# would make this test dependent on the mutable state of an external
+# data source rather than on the function's actual contract).
+test_that("get_mexico_literacy_rate() returns a numeric value column compatible with NA", {
   skip_on_cran()
   result <- get_mexico_literacy_rate()
-  expect_true(any(is.na(result$value)))
+  expect_true(typeof(result$value) %in% c("integer", "double"))
+  expect_true(all(is.na(result$value) | is.numeric(result$value)))
 })
 
 # Test 4: Handles API errors gracefully
 test_that("get_mexico_literacy_rate() handles API error gracefully", {
   skip_on_cran()
-
   stub_get_mexico_literacy_rate <- function() {
     url <- "https://api.worldbank.org/v2/country/MEX/indicator/INVALID_CODE?format=json&date=2010:2022&per_page=100"
     res <- httr::GET(url)
@@ -74,7 +74,6 @@ test_that("get_mexico_literacy_rate() handles API error gracefully", {
     )
     return(df)
   }
-
   result <- stub_get_mexico_literacy_rate()
   expect_null(result)
 })

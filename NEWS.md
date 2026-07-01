@@ -1,3 +1,15 @@
+# MexicoDataAPI 0.3.0
+
+## Breaking Changes
+- `get_country_info_mx()` was removed from the package. The 'REST Countries API' v3.1
+  endpoint it depended on was deprecated by its provider. The replacement v5 endpoint
+  now requires an API key, which is incompatible with CRAN's policy on packages using
+  Internet resources (they must work without user-provided credentials). As a
+  consequence, the 'REST Countries API' is no longer used by `MexicoDataAPI`.
+
+---
+
+
 # MexicoDataAPI 0.2.0
 
 ## Breaking Changes

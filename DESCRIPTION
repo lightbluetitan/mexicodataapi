@@ -1,19 +1,18 @@
 Package: MexicoDataAPI
 Type: Package
 Title: Access Mexican Data via APIs and Curated Datasets
-Version: 0.2.0
+Version: 0.3.0
 Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
 Description: Provides functions to access data from public RESTful APIs including
-    'REST Countries API', 'World Bank API', and 'Nager.Date API', covering Mexico's economic
-    indicators, population statistics, literacy rates, international geopolitical
-    information and official public holidays. The package also includes curated
-    datasets related to Mexico such as air quality monitoring stations, pollution
-    zones, income surveys, postal abbreviations, election studies, forest
-    productivity and demographic data by state. It supports research and analysis
-    focused on Mexico by integrating reliable global APIs with structured national
+    'World Bank API', and 'Nager.Date API', covering Mexico's economic 
+    indicators, population statistics, literacy rates, and official public
+    holidays. The package also includes curated datasets related to Mexico
+    such as air quality monitoring stations, pollution zones, income surveys,
+    postal abbreviations, election studies, forest productivity and
+    demographic data by state. It supports research and analysis focused on
+    Mexico by integrating reliable global APIs with structured national
     datasets drawn from open and academic sources. 
     For more information on the APIs, see: 
-        'REST Countries API' <https://restcountries.com/>, 
         'World Bank API' <https://datahelpdesk.worldbank.org/knowledgebase/articles/889392>, 
         and 'Nager.Date API' <https://date.nager.at/Api>.
 License: GPL-3
@@ -41,6 +40,6 @@ Authors@R:
         email = "arenzocaceresrossi@gmail.com",
         comment = c(ORCID = "0009-0005-0744-854X")
     )
-RoxygenNote: 7.3.2
 Config/testthat/edition: 3
 VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0

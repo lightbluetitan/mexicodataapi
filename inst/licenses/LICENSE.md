@@ -11,9 +11,9 @@ You are free to:
 
 The full text of the GNU General Public License Version 3 (GPL-3) can be found [here](https://www.gnu.org/licenses/gpl-3.0.txt).
 
-## Note on World Bank Open Data API and REST Countries
+## Note on World Bank Open Data API and Nager.Date API
 
-The `MexicoDataAPI` package depends on two public RESTful APIs for accessing Argentine and global data:
+The `MexicoDataAPI` package depends on two public RESTful APIs for accessing Mexican and global data:
 
 1. **World Bank Open Data API**
 
@@ -31,13 +31,7 @@ Data is accessed live via HTTP requests to the API and shown directly in the R c
   > Source: The World Bank – Open Data licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 
-2. **REST Countries API**  
-   An open-source project that offers information about countries worldwide, including demographics, geography, and regional groupings.  
-   This API is also publicly accessible and does not require authentication.  
-   Website: [https://restcountries.com/](https://restcountries.com/)
-   
-   
-3.- **API: Nager.Date**
+2. **API: Nager.Date**
 - Website: [https://date.nager.at/Api](https://date.nager.at/Api)
 - License: MIT License
 - Notes: The API and its source code are licensed under the MIT License. No authentication is required for the public API.
@@ -53,4 +47,4 @@ The `MexicoDataAPI` package, including all its data files (.rda) and code files,
 
 ## Copyright Notice
 
-© 2025 Renzo Caceres Rossi. All rights reserved under the GPL-3.
+© 2025-2026 Renzo Caceres Rossi. All rights reserved under the GPL-3.

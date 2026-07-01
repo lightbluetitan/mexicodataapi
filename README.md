@@ -1,7 +1,6 @@
 # MexicoDataAPI
 
-The `MexicoDataAPI` package provides a unified interface to access open data from the **World Bank API**, **REST Countries API**, and **Nager.Date API**, with a focus on Mexico. It allows users to retrieve up-to-date information on topics such as economic indicators, population figures, literacy rates, unemployment levels, basic geopolitical information, and official public holidays.
-
+The `MexicoDataAPI` package provides a unified interface to access open data from the **World Bank API** and **Nager.Date API**, with a focus on Mexico. It allows users to retrieve up-to-date information on topics such as economic indicators, population figures, literacy rates, unemployment levels, and official public holidays.
 In addition to API-access functions, the package includes a set of curated datasets related to **Mexico**. These cover areas such as air quality monitoring, state-level income surveys, postal abbreviations, election results, and regional forest classification.
 
 ## Installation
@@ -26,8 +25,6 @@ library(MexicoDataAPI)
 ```
 
 ### MexicoDataAPI Functions
-
-- `get_country_info_mx()`: Get Key Country Information about Mexico from the REST Countries API
 
 - `get_mexico_cpi()`: Get Mexico's Consumer Price Index (2010 = 100) from World Bank  
 
@@ -74,9 +71,6 @@ In addition to API access functions, `MexicoDataAPI` provides several preloaded 
 
 # Load the package
 library(MexicoDataAPI)
-
-# Selected, essential information about Mexico
-get_country_info_mx()
 
 # Get Mexico's Population (Total) from World Bank
 get_mexico_population()
